@@ -3,35 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <title>All Pets</title>
-  <style>
-    .pet-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .pet {
-      border: 1px solid #ccc;
-      padding: 10px;
-      width: 200px;
-      text-align: center;
-      border-radius: 8px;
-      background: #f5f5f5;
-    }
-
-    .pet img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 6px;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
+  
+  
 </head>
+
 <body>
+  <header>
+    <h1>Welcome to Our Pet Store</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#contact">Contact</a>
+      <a href="pets.html">Pets</a>
+    </nav>
+  </header>
 
-  <h1>List of Pets</h1>
+  <main>
+    <h2>All Pets</h2>
+    <div style="display: flex; gap: 24px; justify-content: center; margin-top: 20px;">
+      <label><input type="checkbox" class="pet-filter" value="Dog" checked> Dog</label>
+      <label><input type="checkbox" class="pet-filter" value="Cat" checked> Cat</label>
+      <label><input type="checkbox" class="pet-filter" value="Capybara" checked> Capybara</label>
+      <label><input type="checkbox" class="pet-filter" value="Bird" checked> Bird</label>
+    </div>
+    <div class="pet-list" id="petList"></div>
+  </main>
 
-  <div class="pet-list" id="petList"></div>
+  <footer id="contact">
+    <div>
+      <p><strong>123 Pet Store</strong><br>Assumption University</p>
+      <p>Contact us at: <strong>info@petstore.com</strong></p>
+    </div>
+    <div>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.757578088681!2d100.83791649999998!3d13.61161269999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d430e775155f9%3A0xf01923824353260!2sAssumption%20University%20Suvarnabhumi%20Campus!5e0!3m2!1sen!2sth!4v1749614185220!5m2!1sen!2sth" 
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+
+
+  
 </body>
-<script src="script.js"></script> 
 </html>
